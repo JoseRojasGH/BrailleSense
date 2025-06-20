@@ -2,9 +2,9 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Menu from './componentes/Menu';
-import Caracteres from './componentes/Caracteres';
-import Traduccion1 from './componentes/Traduccion1';
-import Traduccion2 from './componentes/Traduccion2';
+import Diccionario from './componentes/Diccionario';
+import TraductorBraille from './componentes/TraductorBraille';
+import TraductorASCII from './componentes/TraductorASCII';
 
 function App() {
   return (
@@ -12,9 +12,9 @@ function App() {
           <BrowserRouter>      
             <Routes>
                 <Route path="/" element={<Menu />} />
-                <Route path="/caracteres" element={<Caracteres />} />
-                <Route path="/traduccion1" element={<Traduccion1 />} />
-                <Route path="/traduccion2" element={<Traduccion2 />} />
+                <Route path="/diccionario" element={<Diccionario />} />
+                <Route path="/traductorbraille" element={<TraductorBraille />} />
+                <Route path="/traductorascii" element={<TraductorASCII />} />
             </Routes>
           </BrowserRouter>
       </div>
@@ -22,5 +22,4 @@ function App() {
 }
 
 export default App;
-
 
