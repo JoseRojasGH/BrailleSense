@@ -1,0 +1,71 @@
+.braille-container {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 30px 40px;
+  background-color: #F5F1E9; /* beige */
+  border-radius: 20px;
+  border: 3px solid #102b5f; /* borde azul oscuro */
+  box-shadow: 0 10px 25px rgba(16, 43, 95, 0.2);
+  font-family: 'Georgia', serif;
+  color: #102b5f; /* texto azul oscuro */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  user-select: text;
+}
+
+
+.input-label {
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+}
+
+.input-help {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: -10px;
+  margin-bottom: 15px;
+  user-select: none;
+}
+
+.braille-textarea {
+  width: 100%;
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  border: 1.5px solid #102b5f;
+  outline: none;
+  resize: vertical;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: #102b5f;
+  box-shadow: inset 2px 2px 6px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease;
+}
+
+.braille-textarea:focus {
+  box-shadow: 0 0 10px 2px #102b5f;
+}
+
+.braille-output-title {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #102b5f;
+  user-select: none;
+}
+
+.braille-output {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px dashed #102b5f;
+  min-height: 100px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  color: #102b5f;
+  font-family: 'Courier New', Courier, monospace;
+  user-select: text;
+}
